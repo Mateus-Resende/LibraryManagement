@@ -1,34 +1,64 @@
 package crud;
 
-import javax.swing.JPanel;
+import java.awt.GridLayout;
+import java.util.HashMap;
+import java.util.Map;
 
-import core.LibraryFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.SpringLayout;
 
 public class AutorCRUD {
+	
+	private Map<String, JPanel> crud;
 
-	public static void renderCreateAutor(LibraryFrame libraryFrame) {
-		System.out.println("create author");
-		JPanel a = (JPanel) libraryFrame.getComponent(1);
-		// remove todos os componentes
-		a.removeAll();
-		// adiciona text fields para nome e id do autor
-		// adiciona autor a lista de autores na biblioteca
+	public AutorCRUD() {
+		this.initializeCrud();
+	}
+	
+	private void initializeCrud() {
+		this.crud = new HashMap<>();
+		
+		crud.put("create", this.renderCreateAutor());
+		crud.put("list", this.renderDeleteAutor());
+		crud.put("update", this.renderUpdateAutor());
+		crud.put("delete", this.renderListAutor());
+	}
+	
+
+	public Map<String, JPanel> getCrud() {
+		return crud;
 	}
 
-	public static void renderDeleteAutor(LibraryFrame libraryFrame) {
-		System.out.println("delete author");
-		// adiciona logica de deletar autor baseado no id
+	private JPanel renderCreateAutor() {
+		JPanel create = new JPanel(new GridLayout(2, 2));
+		
+		JLabel nameLabel = new JLabel("Nome: ");
+		create.add(nameLabel);
+		
+		JTextField nameText = new JTextField(30);
+		create.add(nameText);
+		
+		JLabel idLabel = new JLabel("Id: ");
+		create.add(idLabel);
+		
+		JTextField idText = new JTextField(30);
+		create.add(idText);
+		
+		return create;
 	}
 
-	public static void renderUpdateAutor(LibraryFrame libraryFrame) {
-		// adiciona logica de atualizar um autor baseado no id
-		System.out.println("update author");
+	private JPanel renderDeleteAutor() {
+		return new JPanel();
 	}
 
-	public static void renderListAutor(LibraryFrame libraryFrame) {
-		System.out.println("list author");
-		// adiciona logica de listar os autores que estao instanciados na
-		// Biblioteca
+	private JPanel renderUpdateAutor() {
+		return new JPanel();
+	}
+
+	private JPanel renderListAutor() {
+		return new JPanel();
 	}
 
 }

@@ -4,19 +4,23 @@ public class ExemplarCRUD {
 
 	// nao pode ser possivel criar exemplares sem obrass
 
-	public static void renderCreateExemplar() {
+	public ExemplarCRUD() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void renderCreateExemplar() {
 
 	}
 
-	public static void renderDeleteExemplar() {
+	public void renderDeleteExemplar() {
 
 	}
 
-	public static void renderUpdateExemplar() {
+	public void renderUpdateExemplar() {
 
 	}
 
-	public static void renderListExemplar() {
+	public void renderListExemplar() {
 
 	}
 

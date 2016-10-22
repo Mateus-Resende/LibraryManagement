@@ -4,19 +4,23 @@ public class EmprestimoCRUD {
 
 	// nao pode ser possivel criar emprestimos sem exemplares/usuarios
 
-	public static void renderCreateEmprestimo() {
+	public EmprestimoCRUD() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void renderCreateEmprestimo() {
 
 	}
 
-	public static void renderDeleteEmprestimo() {
+	public void renderDeleteEmprestimo() {
 
 	}
 
-	public static void renderUpdateEmprestimo() {
+	public void renderUpdateEmprestimo() {
 
 	}
 
-	public static void renderListEmprestimo() {
+	public void renderListEmprestimo() {
 
 	}
 

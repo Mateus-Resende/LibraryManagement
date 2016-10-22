@@ -2,23 +2,23 @@ package crud;
 
 public class EditoraCRUD {
 
-	public static void renderCreateEditora() {
-		// TODO Auto-generated method stub
+	public EditoraCRUD() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void renderCreateEditora() {
 		
 	}
 
-	public static void renderDeleteEditora() {
-		// TODO Auto-generated method stub
+	public void renderDeleteEditora() {
 		
 	}
 
-	public static void renderUpdateEditora() {
-		// TODO Auto-generated method stub
+	public void renderUpdateEditora() {
 		
 	}
 
-	public static void renderListEditora() {
-		// TODO Auto-generated method stub
+	public void renderListEditora() {
 		
 	}
 
